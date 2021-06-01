@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="col-4">
                 <a href="https://www.instagram.com/two.denver.dogs/">
                   <img
-                    src="./Assets/icons/Instagram_201409.png"
+                    src={`${process.env.PUBLIC_URL}/icons/Instagram_201409.png`}
                     className="icon"
                     id="email"
                     alt="Instagram Logo"
@@ -21,7 +21,7 @@ const Footer = () => {
               <div className="col-4">
                 <a href="https://www.linkedin.com/in/jennifer-greiner/">
                   <img
-                    src="./Assets/icons/Linkedin_201409.png"
+                    src={`${process.env.PUBLIC_URL}/icons/Linkedin_201409.png`}
                     className="icon"
                     id="linkedin"
                     alt="LinkeIn Logo"
@@ -31,7 +31,7 @@ const Footer = () => {
               <div className="col-4">
                 <a href="https://github.com/jenngreiner">
                   <img
-                    src="./Assets/icons/github_201409.png"
+                    src={`${process.env.PUBLIC_URL}/icons/github_201409.png`}
                     className="icon"
                     id="github"
                     alt="GitHub Logo"
