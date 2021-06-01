@@ -12,12 +12,13 @@ const Contact = () => {
             </header>
             <hr />
             <iframe
+              title="Contact form"
               src="https://docs.google.com/forms/d/e/1FAIpQLSftD4F3y766xtqBARqLiNt_SkqPTFGG2wWT3KF4Pz6OrocpMA/viewform?embedded=true"
               width="640"
               height="940"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
+              frameBorder="0"
+              marginHeight="0"
+              marginWidth="0"
             >
               Loading…
             </iframe>

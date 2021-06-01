@@ -14,6 +14,7 @@ const Footer = () => {
                     src="./Assets/icons/Instagram_201409.png"
                     className="icon"
                     id="email"
+                    alt="Instagram Logo"
                   />
                 </a>
               </div>
@@ -23,6 +24,7 @@ const Footer = () => {
                     src="./Assets/icons/Linkedin_201409.png"
                     className="icon"
                     id="linkedin"
+                    alt="LinkeIn Logo"
                   />
                 </a>
               </div>
@@ -32,6 +34,7 @@ const Footer = () => {
                     src="./Assets/icons/github_201409.png"
                     className="icon"
                     id="github"
+                    alt="GitHub Logo"
                   />
                 </a>
               </div>
