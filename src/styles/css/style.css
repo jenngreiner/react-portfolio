@@ -1,0 +1,86 @@
+body {
+    /* background-image: url(../Images/background.jpeg); */
+    background-color: #FEFAE0;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+header {
+    margin: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: block!important;
+    background-color: #EDCA97!important;
+}
+.img {
+    float: left;
+    height: 250px;
+    margin: 0 20px 0 0;
+}
+
+.link {
+    color: #92a8d1;
+}
+.card-img-top {
+    height: 218px;
+}
+.card-body {
+    background-color: #231520;
+    /* position:absolute; */
+}
+.footer {
+    margin-top: auto;
+    background-color: #EDCA97!important;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: #FAEDCD;
+    padding: 18px;
+    font-size: 10px;
+    color:white;
+    text-align: center;
+}
+
+.active {
+    font-weight: 600;
+    color: #231520;
+}
+.portfolio-img {
+    margin-bottom: 20px;
+    opacity: 100%;
+}
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+}
+
+#intro-header {
+    text-align: center;
+    background-color: #283618;
+    padding: 10px;
+}
+
+#about-me {
+    /* text-align: center; */
+    background-color: #606C38;
+    padding-bottom: 10px;
+}
+
+#portfolio {
+    text-align: center;
+    background-color: #DDA15E;
+    padding-bottom: 20px;
+}
+
+#contact-me {
+    text-align: center;
+    background-color: #bb783a;
+    padding-bottom: 20px;
+}
