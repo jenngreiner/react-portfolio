@@ -15,13 +15,14 @@ const Project = () => {
       <div className="row">
         <div className="col-sm-1"></div>
         <div className="col-xs-12 col-sm-10">
-          <h1>Portfolio</h1>
+          <h1 className="header">Portfolio</h1>
+          <hr />
           <div className="card-container">
             <div className="row">
               <div className="col-sm-4">
                 <div className="card" style={styles.card}>
                   <img
-                    src="./Assets/Images/pupstoplogo.png"
+                    src={`${process.env.PUBLIC_URL}Images/pupstoplogo.png`}
                     style={styles.img}
                     className="card-img-top"
                     alt="Who Said It?"
@@ -45,7 +46,7 @@ const Project = () => {
               <div className="col-sm-4">
                 <div className="card" style={styles.card}>
                   <img
-                    src="./Assets/Images/02-WhoSaidIt.png"
+                    src={`${process.env.PUBLIC_URL}Images/02-WhoSaidIt.png`}
                     className="card-img-top"
                     alt="Who Said It?"
                   />
@@ -67,7 +68,7 @@ const Project = () => {
               <div className="col-sm-4">
                 <div className="card" style={styles.card}>
                   <img
-                    src="./Assets/Images/team-builder.png"
+                    src={`${process.env.PUBLIC_URL}/Images/team-builder.png`}
                     className="card-img-top"
                     alt="Who Said It?"
                   />

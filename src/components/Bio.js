@@ -10,7 +10,7 @@ const Bio = () => {
           <div className="col-sm-3"></div>
           <div className="col-xs-12 col-sm-6" id="about-me">
             <img
-              src="../../public/Images/headshot.jpg"
+              src={`${process.env.PUBLIC_URL}/Images/headshot.jpg`}
               className="img"
               alt="Jenn Greiner headshot"
             />
