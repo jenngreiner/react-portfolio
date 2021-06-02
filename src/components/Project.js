@@ -33,13 +33,26 @@ const Project = () => {
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <a
-                      href="https://pupstop.herokuapp.com/"
-                      className="btn btn-primary"
-                      id="btn-who-said-it"
-                    >
-                      See the app
-                    </a>
+                    <div className="row">
+                      <div className="col-6">
+                        <a
+                          href="https://pupstop.herokuapp.com/"
+                          className="btn btn-primary"
+                          id="btn-who-said-it"
+                        >
+                          See the app
+                        </a>
+                      </div>
+                      <div className="col-6">
+                        <a
+                          href="https://github.com/jenngreiner/Pup-Stop"
+                          className="btn btn-primary"
+                          id="btn-who-said-it"
+                        >
+                          View the repo
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

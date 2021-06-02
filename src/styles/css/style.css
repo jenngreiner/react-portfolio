@@ -29,6 +29,7 @@ body {
 }
 .card-body {
     background-color: #231520;
+    color: #FEFAE0;
     /* position:absolute; */
 }
 .footer {
@@ -72,16 +73,19 @@ body {
     /* text-align: center; */
     background-color: #606C38;
     padding-bottom: 10px;
+    color: #FEFAE0;
 }
 
 #portfolio {
     text-align: center;
     background-color: #DDA15E;
     padding-bottom: 20px;
+    color: #1F140A;
 }
 
 #contact-me {
     text-align: center;
     background-color: #bb783a;
     padding-bottom: 20px;
+    color: #FEFAE0;
 }
