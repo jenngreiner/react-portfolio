@@ -6,10 +6,13 @@ const styles = {
   },
   card: {
     width: "20rem",
+    margin: 20
   },
 };
 
-const Project = () => {
+
+function Project(props) {
+  
   return (
     <div className="container" id="portfolio">
       <div className="row">
@@ -19,24 +22,24 @@ const Project = () => {
           <hr />
           <div className="card-container">
             <div className="row">
+            {props.projects.map(project => (
               <div className="col-sm-4">
-                <div className="card" style={styles.card}>
+                <div className="card" style={styles.card} key={project.id}>
                   <img
-                    src={`${process.env.PUBLIC_URL}Images/pupstoplogo.png`}
+                    src={project.image}
                     style={styles.img}
                     className="card-img-top"
-                    alt="Who Said It?"
+                    alt={project.name}
                   />
                   <div className="card-body">
-                    <h5 className="card-title">PupStop</h5>
+                    <h5 className="card-title">{project.name}</h5>
                     <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      {project.description}
                     </p>
                     <div className="row">
                       <div className="col-6">
                         <a
-                          href="https://pupstop.herokuapp.com/"
+                          href={project.deployed}
                           className="btn btn-primary"
                           id="btn-who-said-it"
                         >
@@ -45,7 +48,7 @@ const Project = () => {
                       </div>
                       <div className="col-6">
                         <a
-                          href="https://github.com/jenngreiner/Pup-Stop"
+                          href={project.repo}
                           className="btn btn-primary"
                           id="btn-who-said-it"
                         >
@@ -56,57 +59,13 @@ const Project = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4">
-                <div className="card" style={styles.card}>
-                  <img
-                    src={`${process.env.PUBLIC_URL}Images/02-WhoSaidIt.png`}
-                    className="card-img-top"
-                    alt="Who Said It?"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">Who Said It?</h5>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a
-                      href="https://justinwestmoreland.github.io/Who-Said-It/"
-                      className="btn btn-primary"
-                    >
-                      See the app
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-4">
-                <div className="card" style={styles.card}>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/Images/team-builder.png`}
-                    className="card-img-top"
-                    alt="Who Said It?"
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">Team Profile Generator</h5>
-                    <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a
-                      href="https://jenngreiner.github.io/team-profile-generator-homework10/"
-                      className="btn btn-primary"
-                      id="btn-who-said-it"
-                    >
-                      See the app
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-1"></div>
-      </div>
-    </div>
+            ))};
+</div>
+</div>
+</div>
+</div>
+</div>
+
   );
 };
 
