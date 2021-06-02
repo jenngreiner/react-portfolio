@@ -38,7 +38,7 @@
     "id": 5,
     "name": "Note Taker",
     "image":
-      "Images/team-builder.png",
+      "Images/note-taker.png",
     "description": "Use the command line to build a visual team profile.",
     "deployed": "https://mighty-dusk-55576.herokuapp.com/",
     "repo": "https://github.com/jenngreiner/note-taker"
