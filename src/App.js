@@ -2,20 +2,25 @@ import "./styles/css/style.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Bio from "./components/Bio";
-import Project from "./components/Project";
+import Portfolio from "./components/pages/Portfolio";
 import Contact from "./components/Contact";
-import projects from "./projects.json"
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
+    <Router>
     <div>
       <Header />
-      <Bio />
-      <Project projects={projects}
-      />
-      <Contact />
+          <Route exact path="/" component={Bio} />
+          <Route exact path="/portfolio"
+            component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
       <Footer />
     </div>
+    </Router>
   );
 }
 

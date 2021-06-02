@@ -4,7 +4,7 @@
     "name": "PupStop",
     "image":
       "Images/pupstoplogo.png",
-    "description": "The AirBnB for dogs!",
+    "description": "Host or rent a backyard for some puppy play time!",
     "deployed": "https://pupstop.herokuapp.com/",
     "repo": "https://github.com/jenngreiner/Pup-Stop"
   },
