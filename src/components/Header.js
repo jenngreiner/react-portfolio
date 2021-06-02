@@ -41,7 +41,7 @@ const Header = () => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="https://docs.google.com/document/d/1SVCFP1erPOWJsvWFNJZSif1cs0-UDxfa9yRncFk2A24/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1gNo4JxTMnx0bnUNfW3rq5tln91u42-Us/view"
               >
                 Resume
               </a>
