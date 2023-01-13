@@ -1,56 +1,93 @@
+/* Color Variables */
+:root {
+    --dk-green: #5b643f;
+    --green: #BBC893;
+    --lt-green: #E0E6B3;
+    --lt-tan: #FEFAE0;
+    --tan: #FAEDCD;
+    --dk-tan: #D4A373;
+    --brown: #755E2E;
+    --black: #1F140A;
+    --link-blue: #92a8d1;
+  }
+
 body {
-    /* background-image: url(../Images/background.jpeg); */
-    background-color: #FEFAE0;
+    background-color: var(--dk-green)!important;
     background-size: cover;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
+
+main {
+    height: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
 .header {
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
 }
 
+hr {
+    background-color: var(--lt-tan)!important;
+}
+
 .navbar {
     display: block!important;
-    background-color: #EDCA97!important;
+    background-color: var(--green)!important;
+    position: fixed!important;
+    top: 0;
+    width: 100%;
 }
+
 .img {
     float: left;
     height: 250px;
     margin: 0 20px 0 0;
+    border-radius: 6em;
 }
 
 .link {
-    color: #92a8d1;
+    color: var(--link-blue);
 }
+
+.card {
+    box-shadow: 2px 2px 7px -2px var(--black);
+    border: transparent!important;
+    border-radius: .25em!important;
+}
+
 .card-img-top {
     height: 218px;
 }
 .card-body {
-    background-color: #231520;
-    color: #FEFAE0;
-    /* position:absolute; */
-}
-.footer {
-    margin-top: auto;
-    background-color: #EDCA97!important;
+    background-color: var(--dk-tan);
+    color: var(--black);
+    border-radius: 0 0 0.25em 0.25em;
 }
 
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
+.btn-primary {
+    background-color: var(--brown)!important;
+    border-color: var(--black)!important;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: var(--green)!important;
+    position: fixed;
     bottom: 0;
-    background-color: #FAEDCD;
     padding: 18px;
     font-size: 10px;
-    color:white;
+    color: white;
     text-align: center;
+    width: 100%;
 }
 
 .active {
     font-weight: 600;
-    color: #231520;
+    color: var(--black);
 }
 .portfolio-img {
     margin-bottom: 20px;
@@ -63,29 +100,59 @@ body {
     width: 30px;
 }
 
+h1 {
+    color: var(--lt-tan);
+}
+
 #intro-header {
     text-align: center;
-    background-color: #283618;
     padding: 10px;
 }
 
 #about-me {
-    /* text-align: center; */
-    background-color: #606C38;
+    /* background-color: var(--green); */
     padding-bottom: 10px;
-    color: #FEFAE0;
+    color: var(--lt-tan);}
+
+.skillsContainer {
+
 }
 
-#portfolio {
-    text-align: center;
-    background-color: #DDA15E;
-    padding-bottom: 20px;
-    color: #1F140A;
-}
-
-#contact-me {
-    text-align: center;
-    background-color: #bb783a;
-    padding-bottom: 20px;
-    color: #FEFAE0;
-}
+.skills {
+    border: 1px solid gray;
+    margin: .25em;
+    border-radius: 0.5em;
+    position: relative;
+    background: var(--lt-tan);
+    box-shadow: 2px 2px 7px -2px var(--black);
+  }
+  .skills::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 8px;
+      width: 78%;
+      height: 4px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 2px 1px 4px white;
+  }
+  .skills::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 80%;
+      width: 8%;
+      height: 4px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 2px 1px 4px white;
+  }
+  .bar {
+    padding: .5em;
+    background-color: var(--dk-tan);
+    border-radius: .5em;
+    color: var(--black);
+    font-weight: bold;
+  }
+  
