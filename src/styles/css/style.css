@@ -24,15 +24,6 @@ main {
     margin-bottom: 6%;
 }
 
-.header {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-hr {
-    background-color: var(--lt-tan)!important;
-}
 
 .navbar {
     display: block!important;
@@ -51,26 +42,6 @@ hr {
 
 .link {
     color: var(--link-blue);
-}
-
-.card {
-    box-shadow: 2px 2px 7px -2px var(--black);
-    border: transparent!important;
-    border-radius: .25em!important;
-}
-
-.card-img-top {
-    height: 218px;
-}
-.card-body {
-    background-color: var(--dk-tan);
-    color: var(--black);
-    border-radius: 0 0 0.25em 0.25em;
-}
-
-.btn-primary {
-    background-color: var(--brown)!important;
-    border-color: var(--black)!important;
 }
 
 .footer {
@@ -104,29 +75,32 @@ h1 {
     color: var(--lt-tan);
 }
 
-#intro-header {
+.pageTitle {
+    padding-bottom: 10px;
     text-align: center;
-    padding: 10px;
 }
 
+div > hr {
+    background-color: var(--lt-tan);
+}
+
+  /* BIO */
 #about-me {
     /* background-color: var(--green); */
     padding-bottom: 10px;
-    color: var(--lt-tan);}
-
-.skillsContainer {
-
+    color: var(--lt-tan);
 }
 
 .skills {
-    border: 1px solid gray;
+    border: 1px solid var(--dk-tan);
     margin: .25em;
     border-radius: 0.5em;
     position: relative;
     background: var(--lt-tan);
     box-shadow: 2px 2px 7px -2px var(--black);
+    font-size: 1.25em;
   }
-  .skills::before {
+  /* .skills::before {
       content: '';
       position: absolute;
       top: 4px;
@@ -147,7 +121,7 @@ h1 {
       background: white;
       border-radius: 10px;
       box-shadow: 2px 1px 4px white;
-  }
+  } */
   .bar {
     padding: .5em;
     background-color: var(--dk-tan);
@@ -155,4 +129,39 @@ h1 {
     color: var(--black);
     font-weight: bold;
   }
+
+  .skillDetails {
+    display: inline-block;
+  }
+
+  .skillLevel {
+    float: right;
+  }
+  /* END BIO */
   
+  /* PORTFOLIO */
+  .card {
+    box-shadow: 2px 2px 7px -2px var(--black);
+    border: transparent!important;
+    border-radius: .25em!important;
+}
+
+.card-img-top {
+    height: 218px;
+}
+.card-body {
+    background-color: var(--dk-tan);
+    color: var(--black);
+    border-radius: 0 0 0.25em 0.25em;
+}
+
+.btn-primary {
+    background-color: var(--brown)!important;
+    border-color: var(--black)!important;
+}
+/* END PORTFOLIO */
+
+/* CONTACT ME */
+iframe {
+    width: 100%;
+}

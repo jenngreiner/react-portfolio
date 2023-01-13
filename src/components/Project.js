@@ -1,4 +1,5 @@
 import React from "react";
+import PageTitle from "./PageTitle";
 
 const styles = {
   img: {
@@ -16,10 +17,8 @@ function Project(props) {
   return (
     <div className="container" id="portfolio">
       <div className="row">
-        <div className="col-sm-1"></div>
-        <div className="col-xs-12 col-sm-10">
-          <h1 className="header">Portfolio</h1>
-          <hr />
+      <div className="col-xs-12 justify-content-center">
+          <PageTitle title="Portfolio"/>
           <div className="card-container">
             <div className="row">
             {props.projects.map(project => (
