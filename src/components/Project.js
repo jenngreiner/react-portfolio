@@ -13,6 +13,7 @@ const styles = {
 
 
 function Project(props) {
+  console.log(props)
   
   return (
     <div className="container" id="portfolio">

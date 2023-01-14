@@ -1,0 +1,58 @@
+{
+    "api": "`${process.env.PUBLIC_URL}/api/contact/index.php`",
+    "successMessage": "Thank you for contacting me.",
+    "errorMessage": "Please fill the complete form",
+    "fields":{
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "msg": ""
+    },
+    "fieldsConfig":
+    [
+        { 
+            "id": 1, 
+            "label": "First Name", 
+            "fieldName": "firstName", 
+            "type": "text",
+            "placeholder":"Your First Name",
+            "isRequired": true, 
+            "klassName":"first-name-field"
+        },
+        { 
+            "id": 2, 
+            "label": "Last Name", 
+            "fieldName": "lastName", 
+            "type": "text", 
+            "placeholder": "Your Last Name",
+            "isRequired": true , 
+            "klassName":"last-name-field"
+        },
+        { 
+            "id": 3, "label": "Email",
+            "fieldName": "email",
+            "type": "email",
+            "placeholder": "Your Email",
+            "isRequired": true,
+            "klassName":"email-field"
+        },
+        {
+            "id": 4, 
+            "label": "Phone", 
+            "fieldName": "phone", 
+            "type": "tel",
+            "isRequired": true, 
+            "klassName":"phone-field"
+        },
+        { 
+            "id": 5, 
+            "label": "Message", 
+            "fieldName": "msg", 
+            "type": "textarea",
+            "placeholder":"Write something.....", 
+            "isRequired": true, 
+            "klassName":"message-field"
+        }
+    ]
+  }
