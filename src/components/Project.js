@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 import PageTitle from "./PageTitle";
 
 const styles = {
@@ -14,7 +15,7 @@ const styles = {
 
 function Project(props) {
   console.log(props)
-  
+  // TODO: fix cards overlapping navbar when scrolling
   return (
     <div className="container" id="portfolio">
       <div className="row">
@@ -38,22 +39,10 @@ function Project(props) {
                     </p>
                     <div className="row">
                       <div className="col-6">
-                        <a
-                          href={project.deployed}
-                          className="btn btn-primary"
-                          id="btn-who-said-it"
-                        >
-                          See the app
-                        </a>
+                        <Button btnName="View the App" btnHref={project.deployed}/>
                       </div>
                       <div className="col-6">
-                        <a
-                          href={project.repo}
-                          className="btn btn-primary"
-                          id="btn-who-said-it"
-                        >
-                          View the repo
-                        </a>
+                       {project.repo ? <Button btnName="Source Code" btnHref={project.repo}/> : null}
                       </div>
                     </div>
                   </div>

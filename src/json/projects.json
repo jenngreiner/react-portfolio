@@ -5,9 +5,7 @@
     "image":
       "Images/huntDuck.png",
     "description": "The VR game. Shoot some ducks to make some bucks!",
-    "deployed": "https://www.oculus.com/experiences/quest/5021514357863510/?ranking_trace=108188674939965_5021514357863510_SKYLINEWEB_582eeb4b-28e8-49f8-980b-4ec1a8bc2aaf&utm_source=www.google.com&utm_medium=oculusredirect",
-    "repo": "https://github.com/jenngreiner/huntduck"
-  },
+    "deployed": "https://www.oculus.com/experiences/quest/5021514357863510/?ranking_trace=108188674939965_5021514357863510_SKYLINEWEB_582eeb4b-28e8-49f8-980b-4ec1a8bc2aaf&utm_source=www.google.com&utm_medium=oculusredirect"  },
   {
     "id": 1,
     "name": "PupStop",

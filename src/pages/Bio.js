@@ -36,6 +36,7 @@ const Bio = () => {
         </div>
         <div className="skillsContainer col-xs-12 d-flex justify-content-center flex-column mx-3">
               <h4>Skills</h4>
+              <hr/>
               {
                 skillsArray.map(skill => <SkillBar skillName={skill.name} skillLevel={skill.level}/>)
               }

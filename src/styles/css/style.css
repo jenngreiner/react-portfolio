@@ -12,10 +12,10 @@
   }
 
 body {
-    background-color: var(--dk-green)!important;
+    background-color: var(--lt-tan)!important;
     background-size: cover;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    color: var(--dk-green);
 }
 
 main {
@@ -31,6 +31,7 @@ main {
     position: fixed!important;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .img {
@@ -72,7 +73,11 @@ main {
 }
 
 h1 {
-    color: var(--lt-tan);
+    color: var(--black);
+}
+
+h4 {
+    margin-bottom: 0;
 }
 
 .pageTitle {
@@ -81,23 +86,23 @@ h1 {
 }
 
 div > hr {
-    background-color: var(--lt-tan);
+    background-color: var(--dk-green);
 }
 
   /* BIO */
 #about-me {
     /* background-color: var(--green); */
     padding-bottom: 10px;
-    color: var(--lt-tan);
+    color: var(--black);
 }
 
 .skills {
-    border: 1px solid var(--dk-tan);
+    border: 1px solid var(--dk-green);
     margin: .25em;
     border-radius: 0.5em;
     position: relative;
     background: var(--lt-tan);
-    box-shadow: 2px 2px 7px -2px var(--black);
+    box-shadow: 2px 2px 7px -2px var(--dk-green);
     font-size: 1.25em;
   }
   /* .skills::before {
@@ -124,10 +129,12 @@ div > hr {
   } */
   .bar {
     padding: .5em;
-    background-color: var(--dk-tan);
+    background-color: var(--dk-green);
     border-radius: .5em;
-    color: var(--black);
+    color: var(--lt-tan);
     font-weight: bold;
+    height: .25em;
+    line-height: 0em;
   }
 
   .skillDetails {
@@ -150,18 +157,48 @@ div > hr {
     height: 218px;
 }
 .card-body {
-    background-color: var(--dk-tan);
-    color: var(--black);
+    background-color: var(--dk-green);
+    color: var(--lt-tan);
     border-radius: 0 0 0.25em 0.25em;
 }
 
-.btn-primary {
-    background-color: var(--brown)!important;
-    border-color: var(--black)!important;
+div > .btn {
+    border-radius: 2em;
+    width: 100%;
+    padding: .5em;
+}
+
+div > .btn-primary {
+    background-color: white!important;
+    border-color: white!important;
+    box-shadow: 2px 2px 7px -2px var(--brown);
+    color: var(--black);
+}
+
+div > .btn-secondary {
+    background-color: var(--dk-green);
+    border-color: var(--dk-green);
+    box-shadow: 2px 2px 7px -2px var(--brown);
+    color: var(--lt-tan);
+    padding: .25em 1em;
+    font-size: 1.25em;
 }
 /* END PORTFOLIO */
 
 /* CONTACT ME */
-iframe {
-    width: 100%;
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em
+}
+
+.field {
+    padding: 1em;
+}
+
+.field input,
+.field textarea {
+    padding: 0.5em;
+    border-radius: 0.5em;
 }

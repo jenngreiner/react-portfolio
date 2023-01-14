@@ -16,7 +16,7 @@
             "label": "First Name", 
             "fieldName": "firstName", 
             "type": "text",
-            "placeholder":"Your First Name",
+            "placeholder":"First Name",
             "isRequired": true, 
             "klassName":"first-name-field"
         },
@@ -25,7 +25,7 @@
             "label": "Last Name", 
             "fieldName": "lastName", 
             "type": "text", 
-            "placeholder": "Your Last Name",
+            "placeholder": "Last Name",
             "isRequired": true , 
             "klassName":"last-name-field"
         },
@@ -33,7 +33,7 @@
             "id": 3, "label": "Email",
             "fieldName": "email",
             "type": "email",
-            "placeholder": "Your Email",
+            "placeholder": "Email",
             "isRequired": true,
             "klassName":"email-field"
         },
@@ -42,6 +42,7 @@
             "label": "Phone", 
             "fieldName": "phone", 
             "type": "tel",
+            "placeholder": "Phone",
             "isRequired": true, 
             "klassName":"phone-field"
         },
@@ -50,7 +51,7 @@
             "label": "Message", 
             "fieldName": "msg", 
             "type": "textarea",
-            "placeholder":"Write something.....", 
+            "placeholder":"Send a message..", 
             "isRequired": true, 
             "klassName":"message-field"
         }

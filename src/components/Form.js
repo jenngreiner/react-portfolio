@@ -10,7 +10,7 @@ function Form(props) {
   const [formData, setFormData] = useState({});
 
 
-
+// TODO: fix error w submit
   const handleSubmit = e => {
     e.preventDefault();
     axios({
@@ -46,10 +46,10 @@ function Form(props) {
               {
                 fieldsConfig && fieldsConfig.map(field => {
                   return (
-                    <div key={field.id}>
+                    <div className="field" key={field.id}>
                       {field.type !== "textarea" ? (
                         <div>
-                        <label>{field.label}</label>
+                        {/* <label>{field.label}</label> */}
                         <input
                           type={field.type}
                           className={field.klassName}
@@ -60,7 +60,7 @@ function Form(props) {
                       </div>
                     ) : (
                       <div>
-                        <label>{field.label}</label>
+                        {/* <label>{field.label}</label> */}
                         <textarea className={field.klassName} placeholder={field.placeholder} onChange={e => handleChange(e, field.fieldName)} value={field.name} />
                       </div>
                       )}
@@ -68,7 +68,9 @@ function Form(props) {
                   )
                 })
               }
-              <input type="submit" onClick={e => handleSubmit(e)} value="Submit" />
+              <div>              
+                <input className="btn-secondary btn" type="submit" onClick={e => handleSubmit(e)} value="Submit" />
+              </div>
               <div>
                 {mailSent && <div className="success">{successMessage}</div>}
                 {error && <div className="error">{errorMessage}</div>}
