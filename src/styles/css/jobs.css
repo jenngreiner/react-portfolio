@@ -1,0 +1,74 @@
+@import "variables.css";
+
+.job-container {
+    display: grid;
+    box-sizing: border-box;
+    margin: 2em;
+}
+
+.job-container .job-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.job-container .job-header .image-role-dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.job-container .job-header .image-role-dates .role-dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.job-container .job-header .image-role-dates .role-dates.role,
+.job-container .job-header .image-role-dates .role-dates .dates {
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.company,
+.location {
+    text-align: right;
+}
+
+.company-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem
+}
+
+.chip {
+    flex: 1;
+    padding: 12px 24px;
+    border-radius: 6px;
+    white-space: nowrap;
+    text-align: center;
+    background-color: var(--dk-green);
+    color: var(--lt-tan);
+    font-weight: bold;
+    border-radius: 1em;
+    width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .job-container {
+        margin: 0;
+    }
+}

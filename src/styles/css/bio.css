@@ -1,0 +1,44 @@
+@import "variables.css";
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    box-sizing: border-box;
+}
+
+.skills .skill {
+    border: 1px solid var(--dk-green);
+    margin: .25em;
+    border-radius: 0.5em;
+    position: relative;
+    background: var(--lt-tan);
+    box-shadow: 2px 2px 7px -2px var(--dk-green);
+    font-size: 1.25em;
+    display: flex;
+}
+
+.bar {
+    padding: .5em;
+    background-color: var(--dk-green);
+    border-radius: .5em;
+    color: var(--lt-tan);
+    font-weight: bold;
+    height: .25em;
+    line-height: 0em;
+}
+
+.skillDetails {
+    display: inline-block;
+}
+
+.skillLevel {
+    float: right;
+}
+
+.img {
+    float: left;
+    height: 250px;
+    margin: 0 20px 0 0;
+    border-radius: 6em;
+}

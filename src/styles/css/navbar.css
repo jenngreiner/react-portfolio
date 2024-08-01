@@ -1,0 +1,29 @@
+@import "variables.css";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 7%;
+    background-color: transparent;
+    padding: 0.25rem 1rem;
+    box-sizing: border-box;
+    color: var(--lt-tan);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--lt-tan);
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 1em;
+}
+
+.navbar .nav-links a.active {
+    font-weight: bolder;
+}

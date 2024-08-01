@@ -1,0 +1,87 @@
+@import "variables.css";
+
+.portfolio-img {
+    margin-bottom: 20px;
+    opacity: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em;
+}
+
+.card-container .card {
+    box-shadow: 2px 2px 7px -2px var(--black);
+    border: transparent;
+    border-radius: .25em;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.card-container .card img {
+    height: 218px;
+}
+
+.card-container .card .card-body {
+    background-color: var(--dk-green);
+    color: var(--lt-tan);
+    border-radius: 0 0 0.25em 0.25em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container .card .card-body .card-title {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.card-container .card .card-body .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 1em;
+}
+
+.card-container .card .card-body .buttons .btn {
+    border-radius: 2em;
+    width: 200px;
+    padding: .5em;
+}
+
+.card-container .card .card-body .buttons .btn-primary {
+    background-color: white !important;
+    border-color: white !important;
+    box-shadow: 2px 2px 7px -2px var(--brown);
+    color: var(--black);
+    text-decoration: none;
+}
+
+.card-container .card .card-body .buttons .btn-secondary {
+    background-color: var(--dk-green);
+    border-color: var(--dk-green);
+    box-shadow: 2px 2px 7px -2px var(--brown);
+    color: var(--lt-tan);
+    padding: .25em 1em;
+    font-size: 1.25em;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card-container .card {
+        width: 100%
+    }
+
+    .card-container .card .card-body .buttons .btn {
+        width: 100px;
+    }
+}

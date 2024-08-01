@@ -1,0 +1,57 @@
+[
+    {
+        "id": 7,
+        "name": "Hunt Duck",
+        "image": "Images/huntDuck.png",
+        "description": "The VR game. Shoot some ducks to make some bucks!",
+        "deployed": "https://www.oculus.com/experiences/quest/5021514357863510/?ranking_trace=108188674939965_5021514357863510_SKYLINEWEB_582eeb4b-28e8-49f8-980b-4ec1a8bc2aaf&utm_source=www.google.com&utm_medium=oculusredirect"
+    },
+    {
+        "id": 1,
+        "name": "PupStop",
+        "image": "Images/pupstoplogo.png",
+        "description": "Host or rent a backyard for some puppy play time!",
+        "deployed": "https://pupstop.herokuapp.com/",
+        "repo": "https://github.com/jenngreiner/Pup-Stop"
+    },
+    {
+        "id": 2,
+        "name": "Who Said It?",
+        "image": "Images/02-WhoSaidIt.png",
+        "description": "Can you tell Who Said It? Donald Trump, Kanye West, or Ron Swanson?",
+        "deployed": "https://justinwestmoreland.github.io/Who-Said-It/",
+        "repo": "https://github.com/justinwestmoreland/Who-Said-It"
+    },
+    {
+        "id": 3,
+        "name": "Team Profile Generator",
+        "image": "Images/team-builder.png",
+        "description": "Use the command line to build a visual team profile.",
+        "deployed": "https://jenngreiner.github.io/team-profile-generator-homework10/",
+        "repo": "https://github.com/jenngreiner/team-profile-generator-homework10"
+    },
+    {
+        "id": 4,
+        "name": "Weather Dashboard",
+        "image": "Images/01-WeatherDashboard.png",
+        "description": "Check the current and 5-day forecast for your city.",
+        "deployed": "https://jenngreiner.github.io/weather-dashboard-homework6/",
+        "repo": "https://github.com/jenngreiner/weather-dashboard-homework6"
+    },
+    {
+        "id": 5,
+        "name": "Note Taker",
+        "image": "Images/note-taker.png",
+        "description": "Use the command line to build a visual team profile.",
+        "deployed": "https://mighty-dusk-55576.herokuapp.com/",
+        "repo": "https://github.com/jenngreiner/note-taker"
+    },
+    {
+        "id": 6,
+        "name": "Work Day Scheduler",
+        "image": "Images/01-WorkDayScheduler.png",
+        "description": "Schedule your work day to view previous and upcoming tasks.",
+        "deployed": "https://jenngreiner.github.io/Work-Day-Scheduler-homework5/",
+        "repo": "https://github.com/jenngreiner/Work-Day-Scheduler-homework5"
+    }
+]

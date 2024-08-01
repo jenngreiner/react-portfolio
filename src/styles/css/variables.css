@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Color Variables */
+:root {
+    --dk-green: #5b643f;
+    --green: #BBC893;
+    --lt-green: #E0E6B3;
+    --lt-tan: #FEFAE0;
+    --tan: #FAEDCD;
+    --dk-tan: #D4A373;
+    --brown: #755E2E;
+    --black: #1F140A;
+    --link-blue: #92a8d1;
+    --font-family: 'Quicksand', sans-serif;
+}

@@ -1,0 +1,24 @@
+[
+    {
+        "company": "Get Well",
+        "location": "Bethesda, MD",
+        "role": "UI Engineer",
+        "image": "Images/GetWell.jpeg",
+        "dates": "November 2021 - Present",
+        "duties": [
+            "Created and maintained developer process documentation, expediting the onboarding process for new UI Engineers.",
+            "Developed a Vue-based Standalone Whiteboard application, creating $10M in revenue."
+        ],
+        "skills": [
+            "Javascript",
+            "Angular",
+            "HTML",
+            "CSS/SASS/SCSS",
+            "Vue",
+            "Vite",
+            "Pinia",
+            "jQuery",
+            "Agile Development"
+        ]
+    }
+]
