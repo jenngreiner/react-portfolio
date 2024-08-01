@@ -1,5 +1,7 @@
 @import "variables.css";
 
+.aboutMe {}
+
 .job-container {
     display: grid;
     box-sizing: border-box;
