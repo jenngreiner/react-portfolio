@@ -1,78 +1,49 @@
-/* Color Variables */
-:root {
-    --dk-green: #5b643f;
-    --green: #BBC893;
-    --lt-green: #E0E6B3;
-    --lt-tan: #FEFAE0;
-    --tan: #FAEDCD;
-    --dk-tan: #D4A373;
-    --brown: #755E2E;
-    --black: #1F140A;
-    --link-blue: #92a8d1;
-  }
+@import "variables.css";
+
+html {
+    height: 100%;
+}
 
 body {
-    background-color: var(--lt-tan)!important;
-    background-size: cover;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--dk-green);
+    background: radial-gradient(circle at 90% 90%, var(--dk-green) 0%, var(--black) 40%, #000 100%);
+    color: var(--lt-tan);
+    font-family: var(--font-family);
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    height: 100%;
 }
 
 main {
     height: 100%;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
 }
 
 
-.navbar {
-    display: block!important;
-    background-color: var(--green)!important;
-    position: fixed!important;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-.img {
-    float: left;
-    height: 250px;
-    margin: 0 20px 0 0;
-    border-radius: 6em;
-}
 
 .link {
     color: var(--link-blue);
 }
 
-.footer {
-    margin-top: auto;
-    background-color: var(--green)!important;
-    position: fixed;
-    bottom: 0;
-    padding: 18px;
-    font-size: 10px;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
-.active {
-    font-weight: 600;
-    color: var(--black);
-}
-.portfolio-img {
-    margin-bottom: 20px;
-    opacity: 100%;
-}
-.icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30px;
-}
-
-h1 {
+*/ h1 {
     color: var(--black);
 }
 
@@ -85,120 +56,6 @@ h4 {
     text-align: center;
 }
 
-div > hr {
+div>hr {
     background-color: var(--dk-green);
-}
-
-  /* BIO */
-#about-me {
-    /* background-color: var(--green); */
-    padding-bottom: 10px;
-    color: var(--black);
-}
-
-.skills {
-    border: 1px solid var(--dk-green);
-    margin: .25em;
-    border-radius: 0.5em;
-    position: relative;
-    background: var(--lt-tan);
-    box-shadow: 2px 2px 7px -2px var(--dk-green);
-    font-size: 1.25em;
-  }
-  /* .skills::before {
-      content: '';
-      position: absolute;
-      top: 4px;
-      left: 8px;
-      width: 78%;
-      height: 4px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 2px 1px 4px white;
-  }
-  .skills::after {
-      content: '';
-      position: absolute;
-      top: 4px;
-      left: 80%;
-      width: 8%;
-      height: 4px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 2px 1px 4px white;
-  } */
-  .bar {
-    padding: .5em;
-    background-color: var(--dk-green);
-    border-radius: .5em;
-    color: var(--lt-tan);
-    font-weight: bold;
-    height: .25em;
-    line-height: 0em;
-  }
-
-  .skillDetails {
-    display: inline-block;
-  }
-
-  .skillLevel {
-    float: right;
-  }
-  /* END BIO */
-  
-  /* PORTFOLIO */
-  .card {
-    box-shadow: 2px 2px 7px -2px var(--black);
-    border: transparent!important;
-    border-radius: .25em!important;
-}
-
-.card-img-top {
-    height: 218px;
-}
-.card-body {
-    background-color: var(--dk-green);
-    color: var(--lt-tan);
-    border-radius: 0 0 0.25em 0.25em;
-}
-
-div > .btn {
-    border-radius: 2em;
-    width: 100%;
-    padding: .5em;
-}
-
-div > .btn-primary {
-    background-color: white!important;
-    border-color: white!important;
-    box-shadow: 2px 2px 7px -2px var(--brown);
-    color: var(--black);
-}
-
-div > .btn-secondary {
-    background-color: var(--dk-green);
-    border-color: var(--dk-green);
-    box-shadow: 2px 2px 7px -2px var(--brown);
-    color: var(--lt-tan);
-    padding: .25em 1em;
-    font-size: 1.25em;
-}
-/* END PORTFOLIO */
-
-/* CONTACT ME */
-form {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 1em
-}
-
-.field {
-    padding: 1em;
-}
-
-.field input,
-.field textarea {
-    padding: 0.5em;
-    border-radius: 0.5em;
 }

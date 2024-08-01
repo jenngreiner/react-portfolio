@@ -12,15 +12,13 @@ import {
 function App() {
   return (
     <Router>
-    <div>
-    <main className="flex-shrink-0">
-      <Header />
-          <Route exact path="/" component={Bio} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
-      <Footer />
-    </main>
-    </div>
+      <main className="flex-shrink-0">
+        <Header />
+        <Route exact path="/" component={Bio} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/contact" component={Contact} />
+        <Footer />
+      </main>
     </Router>
   );
 }
