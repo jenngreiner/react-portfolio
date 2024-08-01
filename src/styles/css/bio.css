@@ -1,5 +1,7 @@
 @import "variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap");
 
+/*** SKILL BAR CSS
 .skills {
     display: flex;
     flex-direction: column;
@@ -35,10 +37,45 @@
 .skillLevel {
     float: right;
 }
+    ***/
 
 .img {
     float: left;
-    height: 250px;
+    height: 20rem;
     margin: 0 20px 0 0;
-    border-radius: 6em;
+    border-radius: 6rem;
+}
+
+/*** BIO ***/
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    letter-spacing: .2rem;
+}
+
+h1 {
+    font-family: 'Gluten', sans-serif;
+    font-size: 12rem;
+    color: var(--tan);
+    text-shadow: 5px 5px 0px var(--dk-green),
+        10px 10px 0px var(--green),
+        15px 15px 0px var(--brown);
+}
+
+b {
+    letter-spacing: .2rem;
+}
+
+/*** SKILLS ***/
+.skillsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.word {
+    padding: 1rem;
 }
